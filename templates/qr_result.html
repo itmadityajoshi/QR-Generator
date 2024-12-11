@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator Tool</title>
+
+    <!-- Bootstrap CSS CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Js CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+        <nav>
+            <div class='conatiner text-center mt-3'>
+              <h5> Your QR code is Genertated </h5>  
+            </div>
+        </nav>
+    <div class='container-sm  text-center  text-black '>
+        <img src=" {{qrlimage}} " class="rounded mx-auto m-3 " style="border: 1px solid black" alt="qr image"/>
+        <div class="card-body pb-3">
+            <h5 class="card-title fw-bold "> {{res_name}} </h5>
+        </div>
+
+        <a href="{{ qrlimage }}"  download="{{ file_name}}" class=' btn btn-primary' > Download QR </a>
+    </div>
+
+
+
+</body>
+</html>
